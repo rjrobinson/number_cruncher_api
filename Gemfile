@@ -1,4 +1,10 @@
 source 'https://rubygems.org'
+ruby '2.1.3'
+
 gem 'sinatra'
 gem 'json'
-gem 'rack-test', group: :test
+
+group :test do
+  gem 'rack-test'
+  gem 'rake'
+end
